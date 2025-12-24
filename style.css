@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #1a472a, #0d2b1a);
+    overflow: hidden; /* Prevents scrollbars from the snow */
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 3rem;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    z-index: 10; /* Keeps card above snow */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #f1d3a1; /* Gold color */
+}
+
+.signature {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Snowflake Styling */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    user-select: none;
+    z-index: 1;
+    pointer-events: none;
+}
